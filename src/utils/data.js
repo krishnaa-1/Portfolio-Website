@@ -1,30 +1,39 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { CiMobile1 } from "react-icons/ci";
-import { MdWorkspacesOutline } from "react-icons/md";
+import { SiCodingninjas } from "react-icons/si";
+import { RiMiniProgramFill } from "react-icons/ri";
+import { MdVideoSettings } from "react-icons/md";
+import { MdOutlineDraw } from "react-icons/md";
 export const projectExperience = [
   {
+    name: " Programming",
+    icon: RiMiniProgramFill,
+    bg: "#F26440",
+  },
+  {
     name: "Website Design",
-    projects: 76,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
-    projects: 63,
-    icon: CiMobile1,
+    name: "Data Structures and Algorithms",
+    icon: SiCodingninjas,
     bg: "#EEC048",
   },
   {
-    name: "Brand Identity",
-    projects: 47,
-    icon: MdWorkspacesOutline,
-    bg: "#F26440",
+    name: "Video Editing",
+    icon: MdVideoSettings,
+    bg: "red",
+  },
+  {
+    name: "Doddling",
+    icon: MdOutlineDraw,
+    bg: "blue",
   },
 ];
 
 export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
-  "We use process design to create digital products. Besides that also help their business",
+  "I'm Krishna Malviya, a B.E CSE undergrad from Chandigarh University. I am also a budding developer with a knack of creating things that can make people's lives easier. I have a keen interest for working in the tech industry, a physics and music enthusiast with good oratory and communication skills and several leadership experiences.",
+  " I develop projects using HTML, CSS, Javascript, React JS and C++. I also have top skills in Data Structures and Algorithms , Programming and Video Editing.",
 ];
 
 export const workExp = [

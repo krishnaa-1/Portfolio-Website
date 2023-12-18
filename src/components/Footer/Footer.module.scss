@@ -1,55 +1,67 @@
 @import '../../styles/contants.scss';
 
-.wrapper{
-    background: white;
-    .container{
-        gap: 2rem;
-        @media (max-width: $sm) {
-            flex-direction: column;
-            gap: 2rem;
-            align-items: flex-start;
-        }
-        .left{
-            flex: 3;
-            >*{
-                display: block;
-            }
-            >:nth-child(2)
-            {
-                margin-top: 3rem;
+// Footer.module.scss
 
-                a{
-                    text-decoration: underline;
-                    color: orange;
-                }
-            }
-        }
+.wrapper {
+    background-color: #F8F7F1;
+    color: $primary;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  
+    .menu {
+      list-style-type: none;
+      padding: 10px;
+      margin-top: 70px;
+      display: flex;
+  
+      li {
+        margin-right: 10px;
+        cursor: pointer;
 
-
-        .right{
-            flex: 1;
-            .info{
-                margin-bottom: 1rem;
-                >*{
-                    display: block;
-                }
+        &:nth-child(1) {
+            svg {
+              color: #004cef; // Facebook
             }
-            .menu{
-                @media (max-width: $sm) {
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                }
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                list-style: none;
-                li{
-                    cursor: pointer;
-                    &:hover{
-                        color: $secondary
-                    }
-                }
+          }
+    
+          &:nth-child(2) {
+            svg {
+              color: #00acee; // Twitter
             }
+          }
+    
+          &:nth-child(3) {
+            svg {
+              color: #e4405f; // Instagram
+            }
+          }
+    
+          &:nth-child(4) {
+            svg {
+              color: #0077b5; // LinkedIn
+            }
+          }
+  
+        svg {
+          font-size: 49px;
         }
+      }
     }
-}
+  }
+  
+  
+  // Add any other styles as needed
+  

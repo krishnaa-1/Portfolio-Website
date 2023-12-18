@@ -1,0 +1,42 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+    .container {
+        flex-direction: row;
+        gap: 2rem;
+        
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  
+    .skillContainer {
+      background-color: transparent; // Set background color as needed
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s;
+  
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s; // Ensure the transition is applied only on hover
+      }
+      svg {
+        font-size: 68px;
+      }
+  
+      .skillLabel {
+        margin-top: 18px;
+        font-size: 16px;
+       font-weight: bolder;
+      }
+    }
+  }
+        }
+    }

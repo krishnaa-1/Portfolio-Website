@@ -196,3 +196,7 @@ export const getMenuStyles = (menuOpened) => {
     return { right: !menuOpened && "-100%" };
   }
 };
+export const scaleIn = {
+  hidden: { scale: 0 },
+  show: { scale: 1, transition: { duration: 0.5 } },
+};

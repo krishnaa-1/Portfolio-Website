@@ -12,11 +12,41 @@
     .container {
         position: relative;
         justify-content: space-between;
-        font-weight: 500;
+        font-weight: bolder;
 
         .name {
             font-size: 1.5rem;
             font-weight: 500;
+            list-style: none;
+            text-decoration: none;
+            .nameLink {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                font-size: 1.6rem;
+                 font-weight: bolder;
+                color: inherit;
+            }
+            .icon {
+                list-style: none;
+                width: 60px; 
+                height: 60px; 
+                margin-right: 10px; 
+                border-radius: 50%;
+                text-decoration: none;
+                font-size: 1.5rem;
+            font-weight: 500;
+            }
+            li {
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    color: $secondary;
+                }
+            }
         }
 
         .menu {
@@ -45,7 +75,7 @@
             }
 
             text-transform: uppercase;
-            font-size: 1rem;
+            font-size: 1.1rem;
             list-style: none;
             gap: 1.5rem;
             cursor: pointer;
@@ -64,6 +94,14 @@
             .phone {
                 gap: 1.2rem;
                 flex-wrap: wrap;
+                .phoneButton {
+                    border: none;
+                    background: none; // Optionally, set background to none if needed
+                    padding: 0; // Optionally, adjust padding as needed
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                  }
 
                 svg {
                     color: $secondary;

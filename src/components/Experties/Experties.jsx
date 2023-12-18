@@ -6,7 +6,7 @@ import {fadeIn, staggerContainer, textVariant} from '../../utils/motion.js'
 const Experties = () => {
   return (
     <section className={css.wrapper}>
-        <a className="anchor" id="experties"></a>
+        <a className="anchor" id="About"></a>
         <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -25,7 +25,7 @@ const Experties = () => {
                             </div>
                             <div>
                                 <span>{exp.name}</span>
-                                <span className='secondaryText'>{exp.projects} Projects</span>
+                                
                             </div>
                         </motion.div>
                     })
@@ -38,18 +38,18 @@ const Experties = () => {
             variants={textVariant(0.5)}
             className={css.rightSide}>
 
-                <span className='primaryText'>What do I help? </span>
+                <span className='primaryText'>ABOUT ME</span>
                 {WhatDoIHelp.map((paragraph, i)=> <span className='secondaryText' key={i}>{paragraph}</span>)}
 
 
                 <div className={`flexCenter ${css.stats}`}>
                     <div className={`flexCenter ${css.stat}`}>
-                        <span className='primaryText'>285+</span>
-                        <span className='secondaryText'>Project Completed</span>
+                        <span className='primaryText'>300+</span>
+                        <span className='secondaryText'>Coding Problems Solved</span>
                     </div>
                     <div className={`flexCenter ${css.stat}`}>
-                        <span className='primaryText'>190+</span>
-                        <span className='secondaryText'>Happy Clients</span>
+                        <span className='primaryText'>5</span>
+                        <span className='secondaryText'>Exiting Projects</span>
                     </div>
                 </div>
             </motion.div>

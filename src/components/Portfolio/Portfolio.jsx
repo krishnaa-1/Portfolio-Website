@@ -14,14 +14,13 @@ const Portfolio = () => {
       <a className="anchor" id="portfolio"></a>
 
       <div className={`innerWidth flexCenter ${css.container}`}>
-
+      <a className="anchor" id="Projects"></a>
 
         <motion.div variants={textVariant(.4)} className={`flexCenter ${css.heading}`}>
           <div>
             <span className="primaryText">My Latest Works</span>
             <p style={{marginTop: "10px"}}>Perfect solution for digital experience</p>
           </div>
-          <span className="secondaryText">Explore More Works</span>
         </motion.div>
 
 

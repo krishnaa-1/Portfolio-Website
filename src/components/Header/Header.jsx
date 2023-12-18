@@ -11,11 +11,16 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
 
-  //to handle click outside of sidebar on mobile
+  // to handle click outside of sidebar on mobile
   useOutsideAlerter({
     menuRef,
     setMenuOpened,
   });
+
+  const handleCallClick = () => {
+    const phoneNumber = "+91-7340447869";
+    window.location.href = `tel:${phoneNumber}`;
+  };
 
   return (
     <motion.div
@@ -24,22 +29,37 @@ const Header = () => {
       whileInView="show"
       className={`bg-primary paddings ${css.wrapper}`}
       viewport={{ once: true, amount: 0.25 }}
-      style={{boxShadow: headerShadow}}
+      style={{ boxShadow: headerShadow }}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
-        <div className={css.name}>Binjan</div>
+        <div className={css.name}>
+          <a href="#" className={css.nameLink}>
+            <img src="/favicon.png" alt="Logo" className={css.icon} />
+            <span>Krishna Malviya</span>
+          </a>
+        </div>
         <ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
           style={getMenuStyles(menuOpened)}
         >
-          <li><a href="#experties">Services</a></li>
-          <li><a href="#work">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#people">Testimonials</a></li>
+          <li>
+            <a href="#About">About me</a>
+          </li>
+          <li>
+            <a href="#Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#Projects">Projects</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact me</a>
+          </li>
           <li className={`flexCenter ${css.phone}`}>
-            <p>+001 (313) 345 678</p>
-            <BiPhoneCall size={"40px"} />
+            <a href="tel:+917340447869">+91-7340447869</a>
+            <button onClick={handleCallClick} className={css.phoneButton}>
+              <BiPhoneCall size={"40px"} />
+            </button>
           </li>
         </ul>
 
