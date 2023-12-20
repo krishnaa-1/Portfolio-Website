@@ -111,4 +111,16 @@
             }
         }
     }
+    @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .right {
+        .menu {
+            flex-direction: row; /* Display menu items in a row on smaller screens */
+            justify-content: center; /* Center the menu items */
+            align-items: flex-start; /* Align menu items to the left */
+        }
+    }
 }
