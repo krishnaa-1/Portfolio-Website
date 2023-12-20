@@ -48,6 +48,11 @@
             &:hover {
               background-color: #45a049; 
             }
+            @media (max-width: $sm) {
+                width: 100%; // Make the button full width on small screens
+                text-align: center; // Center the text on small screens
+                margin-top: 50px;
+            }
           }
 
         .lowerElements {
